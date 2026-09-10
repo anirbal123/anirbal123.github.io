@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三角洲三部曲-系列作品介绍与观看阅读指南</title>
+<meta name="description" content="三角洲三部曲系列作品介绍，梳理三部曲的构成顺序、故事脉络、主要看点与观看阅读建议，帮助读者与观众快速了解这一系列。" />
+<meta name="keywords" content="三角洲三部曲,三角洲系列,三部曲顺序,作品介绍,观看指南" />
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#141b24;
+  --ink-soft:#3d4a5a;
+  --muted:#6b7a8d;
+  --line:#e2e7ee;
+  --bg:#f5f7fa;
+  --paper:#ffffff;
+  --accent:#1f6f5c;
+  --accent-soft:#e6f2ee;
+  --accent-deep:#134a3d;
+  --sand:#c9a86a;
+  --radius:12px;
+  --shadow:0 6px 24px rgba(20,27,36,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{width:min(1180px,92%);margin:0 auto;}
+
+/* ---------- Header ---------- */
+.site-header{
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:42px;height:42px;border-radius:10px;
+  background:linear-gradient(140deg,var(--accent),var(--accent-deep));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:18px;letter-spacing:1px;
+  flex-shrink:0;
+}
+.brand-text b{display:block;font-size:18px;letter-spacing:.5px;}
+.brand-text span{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+.main-nav a{
+  padding:8px 14px;border-radius:8px;font-size:14.5px;color:var(--ink-soft);
+  transition:.2s;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--accent-deep);}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line);border-radius:8px;
+  padding:6px 12px;font-size:14px;color:var(--ink-soft);cursor:pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(201,168,106,.18),transparent 55%),
+    linear-gradient(160deg,#0f3a30 0%,#134a3d 55%,#1f6f5c 100%);
+  color:#eef6f3;
+  padding:64px 0 56px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-80px;bottom:-120px;
+  width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.12);
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:44px;align-items:center;position:relative;z-index:2;}
+.hero-tag{
+  display:inline-block;font-size:12.5px;letter-spacing:2px;
+  border:1px solid rgba(255,255,255,.35);border-radius:999px;
+  padding:4px 14px;margin-bottom:18px;color:#d7ece5;
+}
+.hero h1{font-size:clamp(28px,4vw,44px);line-height:1.28;letter-spacing:1px;font-weight:700;}
+.hero h1 em{font-style:normal;color:var(--sand);}
+.hero p.lead{margin-top:18px;font-size:16.5px;color:#c6ded7;max-width:640px;}
+.hero-actions{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:11px 24px;border-radius:9px;font-size:15px;
+  transition:.22s;border:1px solid transparent;cursor:pointer;
+}
+.btn-solid{background:var(--sand);color:#241c08;font-weight:600;}
+.btn-solid:hover{background:#dcbb7c;transform:translateY(-2px);}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#eaf4f1;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+.hero-facts{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--radius);
+  padding:24px 26px;
+  backdrop-filter:blur(4px);
+}
+.hero-facts h2{font-size:15px;letter-spacing:1px;color:#bfe0d7;font-weight:600;margin-bottom:16px;}
+.hero-facts dl{display:grid;gap:14px;}
+.hero-facts dt{font-size:12.5px;color:#9dc4b9;letter-spacing:1px;}
+.hero-facts dd{font-size:15px;color:#f0f8f5;}
+
+/* ---------- Section base ---------- */
+.section{padding:56px 0;}
+.section-head{margin-bottom:30px;}
+.section-head .kicker{
+  font-size:12.5px;letter-spacing:2.5px;color:var(--accent);
+  font-weight:600;text-transform:uppercase;
+}
+.section-head h2{
+  font-size:clamp(21px,2.6vw,28px);margin-top:8px;letter-spacing:.5px;
+}
+.section-head p{color:var(--muted);margin-top:10px;max-width:760px;font-size:15.5px;}
+
+/* ---------- Intro ---------- */
+.intro{background:var(--paper);border-bottom:1px solid var(--line);}
+.intro-body{display:grid;grid-template-columns:1.6fr 1fr;gap:44px;}
+.intro-body p{margin-bottom:14px;color:var(--ink-soft);}
+.intro-body p:last-child{margin-bottom:0;}
+.intro-aside{
+  background:var(--accent-soft);
+  border-left:4px solid var(--accent);
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:22px 24px;
+}
+.intro-aside h3{font-size:16px;margin-bottom:12px;color:var(--accent-deep);}
+.intro-aside ul{list-style:none;display:grid;gap:10px;}
+.intro-aside li{font-size:14.5px;color:var(--ink-soft);padding-left:16px;position:relative;}
+.intro-aside li::before{
+  content:"";position:absolute;left:0;top:10px;width:6px;height:6px;
+  border-radius:50%;background:var(--accent);
+}
+
+/* ---------- Trilogy cards ---------- */
+.trilogy{background:var(--bg);}
+.tri-list{display:grid;gap:22px;}
+.tri-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 30px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:88px 1fr;gap:26px;
+  transition:.25s;
+}
+.tri-card:hover{transform:translateY(-3px);border-color:#cbd9d4;}
+.tri-num{
+  font-size:34px;font-weight:700;color:var(--accent);
+  border-right:1px solid var(--line);
+  padding-right:20px;line-height:1.1;
+}
+.tri-num small{display:block;font-size:12px;color:var(--muted);letter-spacing:1.5px;font-weight:500;margin-top:8px;}
+.tri-card h3{font-size:19px;margin-bottom:6px;}
+.tri-meta{font-size:13px;color:var(--muted);letter-spacing:.5px;margin-bottom:14px;}
+.tri-card p{color:var(--ink-soft);font-size:15px;}
+.tri-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.tri-points span{
+  font-size:12.5px;background:var(--accent-soft);color:var(--accent-deep);
+  padding:4px 12px;border-radius:999px;
+}
+
+/* ---------- Order / timeline ---------- */
+.order{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.timeline{position:relative;margin-top:10px;padding-left:28px;}
+.timeline::before{
+  content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(var(--accent),#cfe3dd);
+}
+.tl-item{position:relative;padding:0 0 30px 22px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{
+  content:"";position:absolute;left:-28px;top:7px;width:14px;height:14px;
+  border-radius:50%;background:var(--paper);border:3px solid var(--accent);
+}
+.tl-item h3{font-size:17px;margin-bottom:6px;}
+.tl-item p{color:var(--ink-soft);font-size:15px;}
+
+/* ---------- Highlights ---------- */
+.highlights{background:var(--bg);}
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.hl-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);
+}
+.hl-card .ico{
+  width:38px;height:38px;border-radius:9px;background:var(--accent-soft);
+  color:var(--accent-deep);display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:15px;margin-bottom:14px;
+}
+.hl-card h3{font-size:16.5px;margin-bottom:8px;}
+.hl-card p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- Guide ---------- */
+.guide{background:var(--paper);}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;}
+.guide-col h3{font-size:17px;margin-bottom:16px;padding-left:12px;border-left:4px solid var(--sand);}
+.guide-list{list-style:none;display:grid;gap:14px;}
+.guide-list li{
+  background:var(--bg);border-radius:10px;padding:16px 18px;font-size:14.8px;color:var(--ink-soft);
+}
+.guide-list li b{color:var(--ink);display:block;margin-bottom:4px;font-size:15.2px;}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--bg);}
+.faq-list{display:grid;gap:12px;max-width:900px;}
+.faq-item{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;padding:18px 22px;font-size:15.8px;font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";font-size:20px;color:var(--accent);font-weight:400;line-height:1;flex-shrink:0;
+}
+.faq-item[open] summary::after{content:"–";}
+.faq-item .faq-body{padding:0 22px 20px;color:var(--ink-soft);font-size:15px;}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:#0f1a20;color:#a9bcc4;padding:46px 0 26px;font-size:14px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;
+  padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-grid h4{color:#e7f1ee;font-size:15px;margin-bottom:14px;letter-spacing:.5px;}
+.footer-grid p{color:#8ba3ab;font-size:13.8px;line-height:1.8;}
+.footer-grid ul{list-style:none;display:grid;gap:9px;}
+.footer-grid ul a{color:#9fb6bd;font-size:13.8px;transition:.2s;}
+.footer-grid ul a:hover{color:var(--sand);}
+.footer-bottom{
+  padding-top:20px;display:flex;justify-content:space-between;gap:16px;
+  flex-wrap:wrap;font-size:13px;color:#7c9199;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .intro-body{grid-template-columns:1fr;gap:28px;}
+  .hl-grid{grid-template-columns:1fr 1fr;}
+  .guide-grid{grid-template-columns:1fr;gap:26px;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px;}
+}
+@media (max-width:680px){
+  body{font-size:15.4px;}
+  .main-nav{display:none;}
+  .main-nav.open{
+    display:flex;position:absolute;top:100%;left:0;right:0;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:14px 4% 18px;flex-direction:column;gap:4px;
+    box-shadow:0 12px 24px rgba(20,27,36,.08);
+  }
+  .nav-toggle{display:block;}
+  .site-header{position:relative;}
+  .hero{padding:44px 0 40px;}
+  .section{padding:40px 0;}
+  .tri-card{grid-template-columns:1fr;gap:14px;padding:22px;}
+  .tri-num{border-right:none;border-bottom:1px solid var(--line);padding:0 0 12px;display:flex;align-items:baseline;gap:10px;}
+  .tri-num small{margin-top:0;}
+  .hl-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:8px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">Δ</div>
+      <div class="brand-text">
+        <b>三角洲三部曲</b>
+        <span>Trilogy Archive</span>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">目录</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#intro">系列概览</a>
+      <a href="#trilogy">三部构成</a>
+      <a href="#order">顺序梳理</a>
+      <a href="#highlights">看点解析</a>
+      <a href="#guide">观看建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag">系列作品专题</span>
+        <h1>三角洲三部曲：<em>从第一部到终章</em>的完整认识路径</h1>
+        <p class="lead">
+          如果你正在搜索“三角洲三部曲”，多半是想弄清楚它由哪几部组成、应该按什么顺序接触、
+          每一部各自讲了什么。本页围绕这一系列作品，梳理构成关系、脉络走向与观看阅读建议，
+          帮助你用更少的时间建立清晰的整体认知。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#trilogy">查看三部构成</a>
+          <a class="btn btn-ghost" href="#guide">阅读观看建议</a>
+        </div>
+      </div>
+      <aside class="hero-facts">
+        <h2>快速了解</h2>
+        <dl>
+          <dt>系列性质</dt>
+          <dd>由三部相互关联的作品构成的系列</dd>
+          <dt>内容结构</dt>
+          <dd>各部分独立成篇，同时存在整体线索</dd>
+          <dt>适合人群</dt>
+          <dd>希望系统了解该系列的读者与观众</dd>
+          <dt>本页作用</dt>
+          <dd>梳理顺序、脉络与选择建议</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section intro" id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Series Overview</div>
+        <h2>“三部曲”意味着什么</h2>
+        <p>在影视、文学与游戏等不同领域，“三部曲”通常指围绕同一主题或世界观展开的三部作品。它们往往各自完整，又共同构成一个更大的叙事整体。</p>
+      </div>
+      <div class="intro-body">
+        <div>
+          <p>
+            当人们提到“三角洲三部曲”，关注点通常集中在三个方面：它由哪三部作品组成，
+            这三部之间是并列关系还是递进关系，以及初次接触时应该从哪里开始。
+            三部曲的命名方式本身就暗示了一种结构——不是零散的单部作品集合，
+            而是被有意组织起来的一组内容。
+          </p>
+          <p>
+            从常见的系列组织方式看，三部曲中的第一部往往承担“建立”的功能，
+            负责交代背景、人物与基本设定；第二部倾向于“深化”，
+            在已有基础上展开更复杂的冲突或更广阔的视野；第三部则偏向“收束”，
+            对前两部积累的线索与关系做出回应。
+          </p>
+          <p>
+            理解这一层结构，有助于在接触系列时保持耐心：某些在第一部中看似平淡的铺垫，
+            可能要到后两部才显出意义。因此，与其纠结“哪一部最好”，
+            不如先确认自己希望获得的是完整脉络，还是单部作品的独立体验。
+          </p>
+        </div>
+        <aside class="intro-aside">
+          <h3>阅读本页可获得的帮助</h3>
+          <ul>
+            <li>明确三部曲的构成方式与彼此关系</li>
+            <li>了解不同顺序带来的体验差异</li>
+            <li>掌握判断“是否适合自己”的参考维度</li>
+            <li>避开常见的顺序误解与预期偏差</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trilogy cards -->
+  <section class="section trilogy" id="trilogy">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Three Parts</div>
+        <h2>三部构成与各自定位</h2>
+        <p>下面按系列通常的组织逻辑，分别说明每一部在整体中承担的角色，以及它相对独立的价值。</p>
+      </div>
+      <div class="tri-list">
+
+        <article class="tri-card">
+          <div class="tri-num">01<small>第一部</small></div>
+          <div>
+            <h3>第一部：奠定基调与设定</h3>
+            <div class="tri-meta">关键词：起点 · 背景 · 人物关系</div>
+            <p>
+              作为系列的入口，第一部的主要任务是让读者或观众进入这个世界。
+              它通常花费较多篇幅交代环境、规则与核心人物之间的关系，
+              节奏相对平稳，冲突规模也较为克制。
+            </p>
+            <p>
+              这一部的价值往往在回看时才更明显：许多看似随意的细节，
+              其实是后续发展的伏笔。初次接触时若觉得进展缓慢，
+              可以把它理解为整个系列的“地基”。
+            </p>
+            <div class="tri-points">
+              <span>建立世界观</span>
+              <span>介绍核心人物</span>
+              <span>埋设后续线索</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tri-card">
+          <div class="tri-num">02<small>第二部</small></div>
+          <div>
+            <h3>第二部：展开冲突与深化主题</h3>
+            <div class="tri-meta">关键词：转折 · 扩展 · 矛盾升级</div>
+            <p>
+              第二部通常承担承上启下的作用。它在第一部建立的基础上扩大格局，
+              把原本局部的矛盾推向更广的范围，同时开始处理更复杂的主题，
+              例如选择、代价与立场差异。
+            </p>
+            <p>
+              不少系列中，第二部是评价分歧较大的一部：有人认为它最有张力，
+              也有人觉得它偏离了第一部的气质。这种分歧本身，
+              恰恰说明系列在这一阶段进行了明显的自我推进。
+            </p>
+            <div class="tri-points">
+              <span>格局扩大</span>
+              <span>主题深化</span>
+              <span>节奏转折</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tri-card">
+          <div class="tri-num">03<small>第三部</small></div>
+          <div>
+            <h3>第三部：收束线索与回应前作</h3>
+            <div class="tri-meta">关键词：终章 · 回收 · 整体回响</div>
+            <p>
+              第三部往往需要同时完成两件事：给当前的故事一个交代，
+              以及回应前两部积累的伏笔与情感。它可能选择明确收尾，
+              也可能保留一定开放性，把解读空间交给读者与观众。
+            </p>
+            <p>
+              由于承载的期待较多，终章常被拿来与前作比较。
+              与其用“是否超越前作”来衡量，不如关注它是否对系列的核心问题
+              给出了自己的回答。
+            </p>
+            <div class="tri-points">
+              <span>回收伏笔</span>
+              <span>情感落点</span>
+              <span>整体呼应</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Order -->
+  <section class="section order" id="order">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Reading Order</div>
+        <h2>顺序梳理：按什么次序接触更合适</h2>
+        <p>三部曲的顺序问题没有唯一答案，但可以从“完整体验”和“单部体验”两种目标出发来考虑。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <h3>按发布顺序：完整体验优先</h3>
+          <p>
+            如果希望获得系列设计者预期的叙事节奏，按作品面世的先后顺序接触是最稳妥的方式。
+            这种方式能保留伏笔揭示的时机，也能感受到系列在不同阶段的重心变化。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>按故事内在时间：理解脉络优先</h3>
+          <p>
+            部分系列存在故事时间与发布顺序不一致的情况。若你更关心事件本身的因果链条，
+            可以先确认各部在时间线上的位置，再决定从哪一部切入。
+            需要注意的是，这种方式可能削弱部分悬念效果。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>只选一部：兴趣导向优先</h3>
+          <p>
+            如果时间有限，只想先看看合不合口味，可以优先选择题材或风格最贴近自己偏好的那一部。
+            三部曲中的作品通常具备一定的独立性，单独接触不会完全看不懂，
+            但难免会错过跨部呼应带来的额外体验。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>重温型接触：主题对比优先</h3>
+          <p>
+            对已经了解整体的读者与观众而言，按主题而非顺序重看也是一种方式。
+            例如集中关注人物成长线，或对比不同部对同一命题的处理差异，
+            往往能获得不同于首次接触的收获。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="section highlights" id="highlights">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Highlights</div>
+        <h2>系列值得关注的几个维度</h2>
+        <p>判断一个三部曲是否值得投入时间，可以从以下角度观察，而不是只看单点评价。</p>
+      </div>
+      <div class="hl-grid">
+        <div class="hl-card">
+          <div class="ico">叙</div>
+          <h3>叙事结构</h3>
+          <p>三部之间是线性推进，还是采用回环、并行或多视角结构，直接影响整体观感与理解难度。</p>
+        </div>
+        <div class="hl-card">
+          <div class="ico">人</div>
+          <h3>人物弧线</h3>
+          <p>核心人物在三部中的变化是否连贯、可信，是衡量系列完成度的重要参考。</p>
+        </div>
+        <div class="hl-card">
+          <div class="ico">题</div>
+          <h3>主题延续</h3>
+          <p>系列是否围绕相对稳定的命题展开，以及每一部对这一命题的推进程度。</p>
+        </div>
+        <div class="hl-card">
+          <div class="ico">调</div>
+          <h3>风格统一度</h3>
+          <p>各部在节奏、氛围与表达方式上是否保持协调，还是有意做出差异化处理。</p>
+        </div>
+        <div class="hl-card">
+          <div class="ico">合</div>
+          <h3>整体闭合度</h3>
+          <p>终章对前作线索的回收程度，以及是否留下足够的解读余地。</p>
+        </div>
+        <div class="hl-card">
+          <div class="ico">入</div>
+          <h3>入门友好度</h3>
+          <p>对初次接触者是否友好，是否需要额外背景知识才能顺畅理解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide -->
+  <section class="section guide" id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Guide</div>
+        <h2>观看与阅读建议</h2>
+        <p>以下建议适用于多数三部曲类系列，可根据自身情况灵活调整。</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-col">
+          <h3>接触之前</h3>
+          <ul class="guide-list">
+            <li>
+              <b>先确认系列构成</b>
+              弄清三部各自的作品名与相互关系，避免把同系列的不同部分当作无关作品。
+            </li>
+            <li>
+              <b>控制预期</b>
+              三部曲不等于每一部都同等精彩，不同部承担的功能本就不同，不必用统一标准衡量。
+            </li>
+            <li>
+              <b>留意版本与译名差异</b>
+              同一系列在不同渠道可能存在名称或版本差异，确认清楚再开始，能减少混淆。
+            </li>
+          </ul>
+        </div>
+        <div class="guide-col">
+          <h3>接触过程中</h3>
+          <ul class="guide-list">
+            <li>
+              <b>给铺垫留出耐心</b>
+              第一部的慢热往往是整体结构的一部分，过早下结论容易错过后续呼应。
+            </li>
+            <li>
+              <b>记录关键线索</b>
+              人物关系与设定细节较多时，简单记录有助于在后续部分快速回忆。
+            </li>
+            <li>
+              <b>适度避开剧透</b>
+              在未完成前，尽量少看针对终章的深度讨论，以免削弱原本的悬念体验。
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FAQ</div>
+        <h2>常见问题</h2>
+        <p>围绕“三角洲三部曲”这一主题，初次接触者最常提出的几个疑问。</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary>三角洲三部曲必须按顺序看吗？</summary>
+          <div class="faq-body">
+            不一定。按顺序接触能获得更完整的叙事体验，尤其是跨部伏笔与人物变化；
+            但若只是想先了解风格，也可以从自己最感兴趣的一部入手。
+            需要注意的是，跳序接触可能会削弱部分呼应效果。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>只看其中一部会不会看不懂？</summary>
+          <div class="faq-body">
+            三部曲中的单部作品通常具备基本的独立性，单独接触一般不会完全无法理解。
+            但系列特有的设定、人物前史与跨部线索，往往需要结合其他部分才能完整把握。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>三部中哪一部最值得看？</summary>
+          <div class="faq-body">
+            这取决于你的偏好。第一部适合建立整体认知，第二部常被讨论其张力与转折，
+            第三部则关系到系列能否收束完整。与其寻找“最好的一部”，
+            不如根据自己想获得的是铺垫、推进还是收尾来选择。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>接触前需要提前了解背景资料吗？</summary>
+          <div class="faq-body">
+            多数情况下不必。系列作品通常会在开篇提供必要的设定说明。
+            如果涉及特定领域知识，先做少量了解可以降低理解门槛，
+            但过度预习反而可能影响初次体验。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>为什么不同人对这个系列的评价差异很大？</summary>
+          <div class="faq-body">
+            三部曲横跨多个部分，各部的重心与节奏并不相同，观众或读者的关注点也各异。
+            有人重视整体结构，有人更在意单部体验，评价自然会出现分歧。
+            参考多方观点时，注意区分对方评价的是整体还是某一部。
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本页</h4>
+        <p>
+          本页为“三角洲三部曲”主题的系列介绍与导航页，
+          围绕作品构成、顺序梳理与接触建议进行整理，
+          供希望系统了解该系列的读者与观众参考。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">系列概览</a></li>
+          <li><a href="#trilogy">三部构成</a></li>
+          <li><a href="#order">顺序梳理</a></li>
+          <li><a href="#highlights">看点解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸阅读</h4>
+        <ul>
+          <li><a href="#guide">观看与阅读建议</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#order">顺序选择参考</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>三角洲三部曲 · 系列作品专题页</span>
+      <span>内容以介绍与整理为主，具体信息请以官方发布为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+  </html>
